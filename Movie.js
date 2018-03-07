@@ -32,7 +32,7 @@ $(document).ready(function(){
 
             $.ajax({
                 //Insert YOUR API Key after the '=' inside the single quotes.
-                url:'https://api.themoviedb.org/3/search/movie?api_key=INSERT-HERE',
+                url:'https://api.themoviedb.org/3/search/movie?api_key=7c809c9f4bc3fa97931451c4ca5b857b',
                 data: query
             })
             
@@ -55,7 +55,7 @@ $(document).ready(function(){
                  2.  Use as the DOM name where the id is "#overview"
                  3.  Use the example above where the Movie Title was retrieved to complete this step!
                  
-                 *********************************Insert Code Below********************************************/                
+                 *********************************Insert Code Below********************************************/ $("#overview").html(json.results[0].overview);               
                 
                 
                 
@@ -70,7 +70,7 @@ $(document).ready(function(){
                  2.  Use as the DOM name where the id is "#release_date"
                  3.  Use the example above where the Movie Title was retrieved to complete this step!
                  
-                 *********************************Insert Code Below********************************************/               
+                 *********************************Insert Code Below********************************************/ $("#release_date").html(json.results[0].release_date);                
 
 
 
@@ -85,7 +85,7 @@ $(document).ready(function(){
                  2.  Use as the DOM name where the id is "#popularity"
                  3.  Use the example above where the Movie Title was retrieved to complete this step!
                  
-                 *********************************Insert Code Below********************************************/   
+                 *********************************Insert Code Below********************************************/ $("#popularity").html(json.results[0].popularity);    
 
   
 
@@ -100,7 +100,7 @@ $(document).ready(function(){
                  2.  Use as the DOM name where the id is "#original_language"
                  3.  Use the example above where the Movie Title was retrieved to complete this step!
                  
-                 *********************************Insert Code Below********************************************/                 
+                 *********************************Insert Code Below********************************************/  $("#original_language").html(json.results[0].original_language);                 
 
 
 
